@@ -127,3 +127,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Login redirect
 LOGIN_REDIRECT_URL = '/'
+
+# Auth permission for model
+AUTH_USER_MODEL = 'portfolio.Profiles'
