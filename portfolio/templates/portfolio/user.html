@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% load easy_maps_tags %}
+
+    <!-- Default map with 300x400 dimensions -->
+    {% easy_map "28 rue bardin, 92110 clichy" 1400 600 %}
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
