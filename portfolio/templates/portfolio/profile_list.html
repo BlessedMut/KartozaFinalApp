@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>All Profiles</h1>
+{% for detail in profile %}
+    <a href="{% url 'profile.edit' pk=user.id %}">{{ detail.email }}</a><br>
+{% endfor %}
+
+</body>
+</html>
